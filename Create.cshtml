@@ -1,0 +1,95 @@
+@page
+@model crudd.Pages.Home.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link rel="stylesheet" href="~/css/create.css" />
+
+
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <div class="perfil">
+                    <div class="foto-perfil">
+                        <img id="foto" src="~/svgcreate/Vector (4).png">
+                    </div>
+                    <div class="ft">
+                        <button class="choose-ft">
+                            <h2>Choose Photo</h2>
+                        </button>
+                        <div class="icon-user"><img src="~/svgcreate/Vector (5).png"></div>
+                    </div>
+                </div>
+                <div class="slots">
+                    <div class="row-slot1">
+                        <form method="post" class="form">
+                            <label class="label-input">
+                                <input type="text" placeholder="First Name" asp-for="firstname" />
+                                <span asp-validation-for="firstname" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="text" placeholder="Surname" asp-for="surname" />
+                                <span asp-validation-for="surname" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="date" placeholder="Date of Birth" asp-for="register_date" />
+                                <span asp-validation-for="register_date" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="text" placeholder="Phone Number" asp-for="phone" />
+                                <span asp-validation-for="phone" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="text" placeholder="Social Security Number" asp-for="security_number" />
+                                <span asp-validation-for="security_number" class="text-danger"></span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="row-slot2">
+                        <form class="form2">
+                            <label class="label-input">
+                                <input type="text" placeholder="Gender" asp-for="gender" />
+                                <span asp-validation-for="gender" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="text" placeholder="Nationality" asp-for="nacionalidade" />
+                                <span asp-validation-for="nacionalidade" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="text" placeholder="Username" asp-for="username" />
+                                <span asp-validation-for="username" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="text" placeholder="E-mail" asp-for="email" />
+                                <span asp-validation-for="email" class="text-danger"></span>
+                            </label>
+                            <label class="label-input">
+                                <input type="password" placeholder="Password" asp-for="senha" />
+                                <span asp-validation-for="senha" class="text-danger"></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button type="submit" class="circle">
+                        <img src="~/svgcreate/Vector (3).png">
+                    </button>
+                    <button class="circle">
+                        <a class="btn btn-outline-primary" href="/Home/Index" role="button">
+                            <img src="~/svgcreate/Vector (1).png">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="second-column">
+                <div class="title">
+                    <p>Make<br>Your</p>
+                    <h2>registration!</h2>
+                </div>
+                <img id="logo" src="~/svgcreate/Logo2.png">
+            </div>
+        </div>
+    </div>
+</body>
